@@ -1,4 +1,6 @@
-public class demo {
+package Demo;
+
+public class WrapperClassDemo {
     public static void main(String[] args){
         String doubleValue = "139.59";
         Double doubleObj = Double.parseDouble(doubleValue);

@@ -13,9 +13,9 @@ public class ReverseGoals {
         System.out.println("Please enter the third goal and press the enter key.");
         String goal3 = scnr.nextLine();
 
-        System.out.println("3. " + goal3);
-        System.out.println("2. " + goal2);
-        System.out.println("1. " + goal1);
+        String result = "3. " + goal3 + "\n" + "2. " + goal2 + "\n" + "1. " + goal1;
+
+        System.out.print(result);
 
         scnr.close();
     }

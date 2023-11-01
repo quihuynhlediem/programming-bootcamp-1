@@ -24,8 +24,8 @@ public class RecipeConversion {
         double measurementCups = (measurementGrams / CONVERSION_RATE) * scaleFactor;
 
         System.out.println(); // Added explicit newline for separation
-        System.out.printf("%-15s%-15s%-15s%s%s%n", "Ingredient", "Grams", "Scale Factor", "Cups", "Test");
-        System.out.printf("%-15s%-15.0f%-15.1f%.2f%n", ingredientName, measurementGrams, scaleFactor, measurementCups);
+        System.out.printf("%-15s%-15s%-15s%s%s\n", "Ingredient", "Grams", "Scale Factor", "Cups", "Test");
+        System.out.printf("%-15s%-15.0f%-15.1f%.2f\n", ingredientName, measurementGrams, scaleFactor, measurementCups);
 
         // Step 2
         double totalCost = measurementCups * PRICE_PER_CUP;
@@ -34,7 +34,7 @@ public class RecipeConversion {
         totalCost = Math.ceil(totalCost);
 
         // Displaying the cost directly without if-else check
-        System.out.printf("\nThe cost of %.0f cups at $%.2f per cup is $%,.0f%n", measurementCups, PRICE_PER_CUP, totalCost);
+        System.out.printf("\nThe cost of %.0f cups at $%.2f per cup is $%,.0f", measurementCups, PRICE_PER_CUP, totalCost);
         scnr.close();
     }
 }

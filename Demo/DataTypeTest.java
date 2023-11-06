@@ -11,8 +11,8 @@ public class DataTypeTest {
             System.out.println("Enter cube's side length: ");
             sideLength = scnr.nextInt();
 
-            cubeVolume = sideLength * sideLength * sideLength; // cubeVolume is int now =>
-            // cubeVolume = 20000000000;
+            cubeVolume = (long) (sideLength * sideLength * sideLength); // cubeVolume is int now =>
+            //cubeVolume = 20000000000L;
 
 
             System.out.println("Cube's volume is: " + cubeVolume);

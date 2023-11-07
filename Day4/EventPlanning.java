@@ -18,8 +18,8 @@ public class EventPlanning {
         //Scoring for temperature
         int tempScore1;
         int tempScore2;
-        boolean tempEqual1 = ((temp1 - 15) <= 0.001) && ((26 - temp1) >= 0.001);
-        boolean tempEqual2 = ((temp2 - 15) <= 0.001) && ((26 - temp2) >= 0.001);
+        boolean tempEqual1 = ((temp1 - 15) <= 0.001) || ((26 - temp1) >= 0.001);
+        boolean tempEqual2 = ((temp2 - 15) <= 0.001) || ((26 - temp2) >= 0.001);
 
         if (temp1 < 15)
             tempScore1 = 2;

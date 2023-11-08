@@ -12,7 +12,7 @@ public class DateParser {
                 int commaIndex = date.indexOf(",");
                 String month = date.substring(0, date.indexOf(" "));
                 String day = date.substring(date.indexOf(" ") + 1, commaIndex);
-                String year = date.substring(commaIndex +2);
+                String year = date.substring(commaIndex + 2);
                 int monthNum = getMonthAsInt(month);
                 if (monthNum > 0) {
                     System.out.println(monthNum + "-" + day + "-" + year);
@@ -69,3 +69,11 @@ public class DateParser {
         return monthInt;
     }
 }
+
+// March 1, 1990
+// 15/11/2023
+// March 12 1990
+
+// month = 15/11/2023
+// day =
+// year =

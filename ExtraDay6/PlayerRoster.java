@@ -1,4 +1,4 @@
-package ExtraDay1;
+package ExtraDay6;
 
 import java.util.Scanner;
 
@@ -94,8 +94,8 @@ public class PlayerRoster {
         // Implement menu
         char userInput = scnr.next().charAt(0);
         while (userInput != 'q') {
-            // Output roster
 
+            // Output roster
             if (userInput == 'o') {
                 printRoster(jerseyNum, rating);
             }

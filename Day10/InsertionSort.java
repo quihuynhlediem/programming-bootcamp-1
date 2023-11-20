@@ -3,6 +3,10 @@ package Day10;
 import java.util.Scanner;
 
 public class InsertionSort {
+    // Var stored count of swaps and comparisons
+    private static int swapsCount;
+    private static int comparisonsCount;
+
     // Read and return an array of integers.
     // The first integer read is number of integers that follow.
     private static int[] readNums() {
@@ -32,6 +36,7 @@ public class InsertionSort {
         int temp = nums[j];
         nums[j] = nums[k];
         nums[k] = temp;
+        ++swapsCount;
     }
 
     // Sort numbers
@@ -48,7 +53,12 @@ public class InsertionSort {
                 // Swap numbers[j] and numbers[j - 1]
                 swap(numbers, j, j  - 1);
                 --j;
+                ++comparisonsCount;
             }
+            if (j > 0) {
+                ++comparisonsCount;
+            }
+        printNums(numbers);
         }
     }
 
@@ -66,6 +76,8 @@ public class InsertionSort {
 
         // step 4
         /* TODO: Output the number of comparisons and swaps performed */
+        System.out.println("comparisons: " + comparisonsCount);
+        System.out.println("swaps: " + swapsCount);
     }
 }
 

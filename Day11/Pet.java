@@ -1,14 +1,16 @@
 package Day11;
 
-public abstract class Pet {
+public /*abstract*/ class Pet {
 
     private String name;
     private int age;
 
-    private final String type;
+    private final String type = "";
 
     Pet(String type, String name, int age){
         //Write the initialization code.
+        this.name = name;
+        this.age = age;
     }
 
 

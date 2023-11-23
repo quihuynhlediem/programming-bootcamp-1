@@ -9,7 +9,7 @@ public class LabProgram {
 
     public static void typeSelectionSort(ArrayList<FoodItem> foodItemArrayList){
         String minType;
-        int minIndex = 0;
+        int minIndex;
         for (int i = 0; i < foodItemArrayList.size() - 1; i++) {
             minType = foodItemArrayList.get(i).type;
             minIndex = i;
@@ -28,7 +28,7 @@ public class LabProgram {
 
     public static void nameSelectionSort(ArrayList<FoodItem> foodItemArrayList, int startIndex, int endIndex){
         String minType;
-        int minIndex = startIndex;
+        int minIndex;
         for (int i = startIndex; i < endIndex - 1; i++) {
             minType = foodItemArrayList.get(i).name;
             minIndex = i;
@@ -55,7 +55,7 @@ public class LabProgram {
         System.out.println();
         FileInputStream fileByteStream = new FileInputStream("Day11/Lab2/" + filename);
         Scanner scan = new Scanner(fileByteStream);
-        ArrayList<FoodItem> foodItemArrayList = new ArrayList<FoodItem>();
+        ArrayList<FoodItem> foodItemArrayList = new ArrayList<>();
 
         while (scan.hasNextLine()){
             String input = scan.nextLine();
@@ -72,6 +72,7 @@ public class LabProgram {
             foodItemArrayList.add(food);
         }
 
+        //Sort normally
         for (int i = 0; i < foodItemArrayList.size(); i++) {
             if (foodItemArrayList.get(i).available) {
                 System.out.println(foodItemArrayList.get(i).getDescription());
@@ -89,7 +90,6 @@ public class LabProgram {
         }
 
         //Sort base on type and name
-        //Sort base on type
         System.out.println("\n");
         System.out.println("Sorted (Category & Name)");
         int i = 0;

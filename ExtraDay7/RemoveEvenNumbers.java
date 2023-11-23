@@ -30,6 +30,5 @@ public class RemoveEvenNumbers {
         int [] result = removeEvens(input);
 
         System.out.println(Arrays.toString(result));
-        System.out.println(-9 % 2);
     }
 }

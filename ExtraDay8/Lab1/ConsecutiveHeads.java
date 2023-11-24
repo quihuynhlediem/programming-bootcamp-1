@@ -4,7 +4,17 @@ public class ConsecutiveHeads {
 
     public static int consecutiveHeads(GVCoin c, int goal) {
         /* Type your code here. */
-        return 0;
+        int consecutiveHead = 0;
+        while (consecutiveHead < goal){
+            c.flip();
+            if (c.isHeads()){
+                consecutiveHead++;
+            }
+            else {
+                consecutiveHead = 0;
+            }
+        }
+        return c.numFlips();
     }
 
     public static void main(String[] args) {

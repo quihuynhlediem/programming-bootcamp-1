@@ -47,7 +47,7 @@ public abstract class Student {
 
     //Setter and setter for birthday
     public void setBirthday(String _birthday){
-        name = _birthday;
+        birthday = _birthday;
     }
 
     public String getBirthday(){

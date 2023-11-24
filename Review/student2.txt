@@ -1,0 +1,6 @@
+name:nguyen nhu an
+sid:4023719
+major:finance
+birthday:11/12/2005
+GPA:2.6
+intake:2023

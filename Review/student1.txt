@@ -1,0 +1,6 @@
+name:nguyen van tuan
+sid:4023710
+major:IT (technology)
+birthday:15/02/2005
+GPA:3.25
+intake:2023

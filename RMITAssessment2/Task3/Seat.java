@@ -9,7 +9,7 @@ public abstract class Seat {
     private int seatNum;
     private String seatPosition;
     private String seatMaterial;
-    boolean isBooked = false;
+    private boolean isBooked = false;
 
     /** CONSTRUCTORS */
     public Seat() {
@@ -39,10 +39,10 @@ public abstract class Seat {
     }
     public String getNumber(){
         String outputNum = "";
-        if (seatNum >= 0 && seatNum < 10){
+        if (seatNum > 0 && seatNum < 10){
             outputNum = "0" + seatNum;
         }
-        else if (seatNum <= 32){
+        else if (seatNum <= 32 && seatNum >= 10){
             outputNum = "" + seatNum;
         }
         else {

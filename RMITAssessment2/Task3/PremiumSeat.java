@@ -1,8 +1,8 @@
 package RMITAssessment2.Task3;
 
 public class PremiumSeat extends Seat {
-    private boolean hasPillow;
-    private boolean hasLegRest;
+    private boolean hasPillow = true;
+    private boolean hasLegRest = super.getRow().equals("A");
     public PremiumSeat(String row, int number, String position){
         super(row, number, "Leather", position);
     }

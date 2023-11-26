@@ -1,4 +1,4 @@
-package Assessment1;
+package RMITAssessment1;
 
 import java.util.Scanner;
 
